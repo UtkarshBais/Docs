@@ -116,6 +116,8 @@ To prevent a method from getting invoked as an action, use the **NonAction** att
 
 [!code-csharp[Main](routing-in-aspnet-web-api/samples/sample8.cs)]
 
+Note: For Web API 2.0 even if a method does not use **Route** attribute, it will remain inaccessible via the URL (routing rules).
+
 ## Further Reading
 
 This topic provided a high-level view of routing. For more detail, see [Routing and Action Selection](routing-and-action-selection.md), which describes exactly how the framework matches a URI to a route, selects a controller, and then selects the action to invoke.
